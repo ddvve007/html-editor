@@ -188,7 +188,7 @@ body.dragging #welcome h2{color:#333}
       <label class="wbtn" for="fileInput" id="btnPick">打开HTML文件</label>
       <div class="quick-steps"><div><span>01</span><strong>打开文件</strong><p>拖入或选择HTML</p></div><div><span>02</span><strong>选中并编辑</strong><p>双击文字直接改</p></div><div><span>03</span><strong>预览后下载</strong><p>拿到可独立打开的文件</p></div></div>
       <div class="wcopy">© dve · 使用问题或希望增加的功能，欢迎邮件至 <a href="mailto:34702924@qq.com">34702924@qq.com</a></div>
-      <div class="wver">构建 2026-10-10 17:43</div>
+      <div class="wver">构建 2026-11-14 08:51</div>
     </div>
     <iframe id="canvas" hidden title="deck"></iframe>
   </div>
@@ -207,7 +207,7 @@ body.dragging #welcome h2{color:#333}
   <div id="helpDlg">
     <div class="hpanel">
       <div class="hhead"><span>HTML 编辑器 · 使用说明</span><button class="hx" id="helpClose" title="关闭">✕</button></div>
-      <div class="hbody"><h3>日常只用四步：打开 → 编辑 → 预览 → 下载</h3><p><b>编辑</b>：双击改字、拖动排版；内容区按钮不会执行原动作。<b>预览</b>：使用课件的按钮、选择卡与下拉框。导航和翻页始终可用。工具条可拖动，“＋”展开插入选择；层级、删除等按钮直接显示，悬停查看说明。<b>顶部HTML源码按钮</b>：查找、修改完整源码并应用。</p><p>可视化编辑改变页面显示；若要修改复制内容、计算公式或内嵌数据，请用HTML源码。修改动态课件后，务必下载新文件，并重新打开检查。</p>
+      <div class="hbody"><h3>日常只用四步：打开 → 编辑 → 预览 → 下载</h3><p><b>编辑</b>：双击改字、拖动排版；用课件上的导航按钮翻页。<b>预览</b>：使用课件原有的键盘快捷键、按钮、选择卡与下拉框。工具条可拖动，“＋”展开插入选择；层级、删除等按钮直接显示，悬停查看说明。<b>顶部HTML源码按钮</b>：查找、修改完整源码并应用。</p><p>可视化编辑改变页面显示；若要修改复制内容、计算公式或内嵌数据，请用HTML源码。修改动态课件后，务必下载新文件，并重新打开检查。</p>
         <p style="color:#51607a; margin:8px 0 0;">给网页报告加批注、调版式的浏览器小工具 —— 无需安装，双击就能用。<br>适用于 Chrome / Edge / Safari · 编辑器本机处理 · 原网页外部资源按原配置加载</p>
 
         <h2><span>1</span>这是什么</h2>
@@ -231,7 +231,7 @@ body.dragging #welcome h2{color:#333}
           <tr><td>工具条「选择上一级」按钮</td><td>从内部元素跳到外层容器（如单元格 → 表格）</td></tr>
           <tr><td>双击文字</td><td>直接改字（页面里的图表文字也可以）</td></tr>
         </table>
-        <p><b>缩放</b></p><p>文本框拖左右手柄调整宽度，拖上下手柄调整高度；字号保持不变。拖角点可自由调整，按住Shift拖角点可等比调整框体。字号使用A- / A+按钮。</p>
+        <p><b>缩放</b></p><p>文本框可随行数自动调整高度。拖左右手柄调整宽度，拖上下手柄可指定高度；字号保持不变。拖角点可自由调整，按住Shift拖角点可等比调整框体。字号使用A- / A+按钮。</p>
         <table>
           <tr><th style="width:42%">操作</th><th>效果</th></tr>
           <tr><td>拖四角手柄</td><td>自由调整宽和高</td></tr>
@@ -248,7 +248,7 @@ body.dragging #welcome h2{color:#333}
         <p><b>层级</b>：元素被其他内容遮挡时，选中它点「置于顶层」（方框上箭头）浮到最上方，「置于底层」（方框下箭头）沉到下层；可撤销。</p>
         <p><b>颜色</b>：选中元素后点工具条“颜色”，面板会按选中对象区分「<b>文字颜色 / 文字底色</b>」与「<b>边框颜色 / 填充底色</b>」——边框改线条颜色（形状、表格、卡片都行，原本没边框的会自动补上）；底色改填充（表格连单元格一起变）。12 个常用色 + 自定义拾色器。</p>
         <p><b>文字</b>：<code>A− / A+</code> 调字号、<code>B</code> 加粗；调色板「文字颜色」模式可改文字颜色。</p>
-        <p><b>撤销与删除</b>：<code>⌘Z</code>（Mac）/ <code>Ctrl+Z</code>（Win）撤销 30 步；删除按钮删除选中元素（可撤销）；<code>Esc</code> 退出编辑 / 取消选中。</p>
+        <p><b>撤销与删除</b>：单击选中元素后，按 <code>Backspace</code> 或 <code>Delete</code>，也可点工具条的删除按钮。双击进入文字编辑后，这两个键只删文字。<code>⌘Z</code>（Mac）/ <code>Ctrl+Z</code>（Win）可撤销，最多 30 步。按 <code>Esc</code> 退出文字编辑或取消选中。</p>
         <p><b>工具条位置</b>：按住工具条“拖动”处或空白处（按钮以外）可拖到任意位置，不再挡住内容；同一次使用期间，重新载入文件会保留位置。</p>
 
         <h2><span>4</span>保存与导出</h2>
@@ -322,17 +322,24 @@ var T = DE.T = new Map();         // HTML 元素 -> {tx, ty, s, orig}
 var TS = DE.TS = new Map();       // SVG 元素 -> {tx, ty, s, orig}
 var stack = DE.stack = [];        // 撤销栈（逐元素快照，不重建 DOM）
 var editing = null;               // 正在文本编辑的元素
+var svgEditor = null;
 var drag = null;                  // 进行中的拖动/缩放
 var hoverEl = null;
 var pending = null;               // pointerdown 后待判定（点击 or 拖动）
-var lastActionT = 0;
+var lastNudgeT = 0;
 var deckEl = null;
 var boxLayer = null;
+var selectionFrame = 0;
+var selectionGeometry = null;
+var textHeight = null;
 var lastClickEl = null;
 var domGen = 0;                   /* 内容容器“重画”代号：重画后旧快照失效 */
 
 DE.getDoc = function () { return doc; };
 DE.getWin = function () { return win; };
+DE.focusCanvas = function () {
+  if (document.activeElement !== ifr) ifr.focus();
+};
 DE.getDeckEl = function () { return deckEl; };
 DE.getK = function () {
   if (!deckEl) return 1;
@@ -359,14 +366,29 @@ function Kof(el) {
 }
 
 function resetState() {
+  if (selectionFrame) win.cancelAnimationFrame(selectionFrame);
+  selectionFrame = 0;
+  selectionGeometry = null;
+  textHeight = null;
+  resizeState = null;
+  lineEndState = null;
   sel.length = 0;
+  lastNudgeT = 0;
   T.clear(); TS.clear();
   stack.length = 0;
-  editing = null; drag = null; hoverEl = null; pending = null;
+  editing = null; svgEditor = null; drag = null; hoverEl = null; pending = null;
   lastClickEl = null;
 }
 
 /* ---- 载入 ---- */
+function withKeyboardGuard(html) {
+  // Keep the original doctype and opening tags before the bootstrap script.
+  var opening = /^(?:\s|<!--[\s\S]*?-->|<!doctype\s[^>]*>)*(?:<html(?=[\s>])(?:[^>"']|"[^"]*"|'[^']*')*>(?:\s|<!--[\s\S]*?-->)*)?(?:<head(?=[\s>])(?:[^>"']|"[^"]*"|'[^']*')*>)?/i;
+  var pos = html.match(opening)[0].length;
+  var script = '<script>parent.DE.installKeyboardGuard(window);document.currentScript.remove();</' + 'script>';
+  return html.slice(0, pos) + script + html.slice(pos);
+}
+
 function load(text, name, url) {
   DE.mode = 'edit';
   S.text = text; S.name = name || 'deck.html'; S.url = url || '';
@@ -385,7 +407,7 @@ function load(text, name, url) {
     catch (err) { toast('初始化编辑引擎失败：' + err.message, 5000); console.error(err); }
     guardDropInFrame();
   };
-  ifr.srcdoc = text;
+  ifr.srcdoc = withKeyboardGuard(text);
 }
 DE.load = load;
 
@@ -466,10 +488,14 @@ function parentOf(el) {
   return p;
 }
 function clamp(v, a, b) { return v < a ? a : v > b ? b : v; }
-function getRect(el) { return el.getBoundingClientRect(); }
+function getRect(el) {
+  if (isLineEl(el)) return el.querySelector('.vis').getBoundingClientRect();
+  return el.getBoundingClientRect();
+}
 
 /* ==================== 引擎：选中与选框 ==================== */
 function select(el) {
+  lastNudgeT = 0;
   sel.length = 0;
   if (el) sel.push(el);
   lastClickEl = el;
@@ -478,7 +504,7 @@ function select(el) {
 DE.select = select;
 
 function clearSel() {
-  if (!sel.length && !editing) return;
+  if (!sel.length && !editing && !svgEditor) return;
   endEdit();
   sel.length = 0;
   refreshSel();
@@ -498,43 +524,69 @@ function clearHover() {
 DE.clearHover = clearHover;
 
 function toggleSel(el) {
+  lastNudgeT = 0;
   var i = sel.indexOf(el);
   if (i >= 0) sel.splice(i, 1); else sel.push(el);
   lastClickEl = el;
   refreshSel();
 }
 
-/* 绘制选框（fixed 覆盖层，屏幕坐标） */
+/* Compare viewport geometry while selected, including scroll and layout-only changes. */
+function trackSelection() {
+  selectionFrame = 0;
+  var changed = false;
+  for (var i = sel.length - 1; i >= 0; i--) {
+    var el = sel[i];
+    if (el.isConnected && (el === editing || el.getClientRects().length)) continue;
+    sel.splice(i, 1);
+    changed = true;
+  }
+  if (changed) {
+    selectionGeometry = null;
+    endEdit();
+    callUi('onSelChange');
+  }
+  paintSelection();
+}
+
+function paintSelection() {
+  if (!boxLayer) return;
+  if (sel.length && !selectionFrame) selectionFrame = win.requestAnimationFrame(trackSelection);
+  else if (!sel.length && selectionFrame) {
+    win.cancelAnimationFrame(selectionFrame);
+    selectionFrame = 0;
+  }
+  var rects = sel.map(getRect);
+  var endpoints = sel.length === 1 && isLineEl(sel[0])
+    ? Array.from(sel[0].querySelectorAll('.de-ep'), getRect) : [];
+  var geometry = rects.concat(endpoints).map(function (r) {
+    return [r.left, r.top, r.width, r.height].join(',');
+  }).join('|');
+  if (geometry === selectionGeometry) return;
+  selectionGeometry = geometry;
+  boxLayer.innerHTML = '';
+  if (!rects.length) return;
+
+  if (rects.length === 1) {
+    drawBox(rects[0], false, false);
+    if (canResize(sel[0])) drawHandles(rects[0]);
+    drawLinepts(endpoints);
+    return;
+  }
+  var left = Infinity, top = Infinity, right = -Infinity, bottom = -Infinity;
+  rects.forEach(function (r) {
+    drawBox(r, true, false);
+    left = Math.min(left, r.left); top = Math.min(top, r.top);
+    right = Math.max(right, r.right); bottom = Math.max(bottom, r.bottom);
+  });
+  var group = { left: left, top: top, right: right, bottom: bottom, width: right - left, height: bottom - top };
+  drawBox(group, false, true);
+  if (sel.every(function (el) { return !isSvg(el); })) drawHandles(group);
+}
 function refreshSel() {
   if (!boxLayer) return;
-  boxLayer.innerHTML = '';
-  var i, r;
-  if (!sel.length) { callUi('onSelChange'); return; }
-
-  if (sel.length === 1) {
-    r = getRect(sel[0]);
-    drawBox(r, false, false);
-    if (canResize(sel[0])) drawHandles(r);
-    if (isLineEl(sel[0])) drawLinepts(sel[0]);
-  } else {
-    // 每个元素细虚线框
-    for (i = 0; i < sel.length; i++) {
-      r = getRect(sel[i]);
-      drawBox(r, true, false);
-    }
-    // 组包围盒
-    var L = Infinity, Tp = Infinity, R = -Infinity, B = -Infinity;
-    for (i = 0; i < sel.length; i++) {
-      r = getRect(sel[i]);
-      L = Math.min(L, r.left); Tp = Math.min(Tp, r.top);
-      R = Math.max(R, r.right); B = Math.max(B, r.bottom);
-    }
-    drawBox({ left: L, top: Tp, right: R, bottom: B, width: R - L, height: B - Tp }, false, true);
-    // 组缩放（全为 HTML 元素时）
-    if (sel.every(function (el) { return !isSvg(el) || isLineEl(el); })) {
-      drawHandles({ left: L, top: Tp, right: R, bottom: B, width: R - L, height: B - Tp });
-    }
-  }
+  selectionGeometry = null;
+  paintSelection();
   callUi('onSelChange');
 }
 DE.refreshSel = refreshSel;
@@ -570,11 +622,9 @@ function canResize(el) {
 function isLineEl(el) {
   return !!(el.classList && el.classList.contains('de-line'));
 }
-function drawLinepts(el) {
-  var eps = el.querySelectorAll('.de-ep');
-  for (var i = 0; i < eps.length; i++) {
-    var c = eps[i];
-    var p = c.getBoundingClientRect();
+function drawLinepts(endpoints) {
+  for (var i = 0; i < endpoints.length; i++) {
+    var p = endpoints[i];
     var d = doc.createElement('div');
     d.setAttribute('data-de-ui', '1');
     d.className = 'de-eppt';
@@ -636,7 +686,7 @@ function svgDelta(el, dx, dy) {
 /* ==================== 引擎：快照 / 撤销 ==================== */
 /* 逐元素快照：绝不重建 DOM（deck 自己的闭包引用保持有效），
  * 只记录可改属性（style / SVG 属性）+ 叶子文本 + 原位置（parent/next）。 */
-var SVG_ATTRS = ['font-size', 'font-weight', 'fill', 'stroke', 'stroke-width', 'stroke-dasharray', 'marker-end', 'x1', 'y1', 'x2', 'y2', 'cx', 'cy'];
+var SVG_ATTRS = ['transform', 'font-size', 'font-weight', 'fill', 'stroke', 'stroke-width', 'stroke-dasharray', 'marker-end', 'x1', 'y1', 'x2', 'y2', 'cx', 'cy'];
 
 function elSnapshot(el) {
   var st = {
@@ -679,18 +729,18 @@ function snap() {
   for (var i = 0; i < els.length; i++) items.push(elSnapshot(els[i]));
   stack.push({ items: items, gen: domGen });
   if (stack.length > 30) stack.shift();
-  lastActionT = Date.now();
+  lastNudgeT = 0;
 }
 DE.snap = snap;
 function snapLazy(winMs) {
   var now = Date.now();
-  if (now - lastActionT > (winMs || 800)) snap();
-  else lastActionT = now;
+  if (now - lastNudgeT > (winMs || 800)) snap();
+  lastNudgeT = now;
 }
 function undo() {
+  lastNudgeT = 0;
   while (stack.length && stack[stack.length - 1].gen !== domGen) stack.pop();
   if (!stack.length) {
-    if (DE.Persist && DE.Persist.tryRevert && DE.Persist.tryRevert()) { toast('已撤销'); return; }
     toast('没有可撤销的操作');
     return;
   }
@@ -704,13 +754,16 @@ function undo() {
   for (var j = 0; j < nowEls.length; j++) {
     if (!before.has(nowEls[j])) nowEls[j].remove();
   }
-  /* 2) 按先序恢复（父先于子）：插回缺失 -> style -> SVG 属性 -> 文本 */
+  /* 从后往前插回缺失节点，保证多个相邻元素的后继节点先就位。 */
+  for (var n = s.items.length - 1; n >= 0; n--) {
+    var missing = s.items[n];
+    if (missing.el.isConnected || missing.el.parentNode === missing.parent) continue;
+    var next = missing.next;
+    missing.parent.insertBefore(missing.el, next && next.parentNode === missing.parent ? next : null);
+  }
+  /* 2) 按先序恢复：style -> SVG 属性 -> 文本 */
   for (var k = 0; k < s.items.length; k++) {
     var it = s.items[k], el = it.el;
-    if (!el.isConnected && it.parent) {
-      if (it.next && it.next.parentNode === it.parent) it.parent.insertBefore(el, it.next);
-      else it.parent.appendChild(el);
-    }
     if (it.style === null) el.removeAttribute('style');
     else el.setAttribute('style', it.style);
     if (it.attrs) {
@@ -736,13 +789,32 @@ DE.undo = undo;
 
 /* ==================== 引擎：文本编辑 ==================== */
 function canEditText(el) {
+  if (!el) return false;
   if (isSvg(el)) return el.tagName === 'text';
-  if (el.hasAttribute && el.hasAttribute('data-de-noedit')) return false;
-  if (!el || /^(INPUT|TEXTAREA|SELECT|SCRIPT|STYLE|IMG|SVG)$/.test(el.tagName)) return false;
-  if (!(el.textContent || '').trim()) return false;
+  if (el.hasAttribute('data-de-noedit') || /^(INPUT|TEXTAREA|SELECT|SCRIPT|STYLE|IMG|SVG)$/.test(el.tagName)) return false;
+  if (!(el.textContent || '').trim() && !el.matches('p,h1,h2,h3,h4,h5,h6,.de-text')) return false;
   if (el.childElementCount === 0) return true;
   if (!/^(P|H[1-6]|SPAN|BUTTON|LABEL|LI|TD|TH|BLOCKQUOTE|STRONG|EM|DIV)$/.test(el.tagName)) return false;
-  return Array.from(el.querySelectorAll('*')).every(function (n) { return /^(BR|SPAN|STRONG|B|EM|I|U|SMALL|CODE|SUP|SUB)$/.test(n.tagName); });
+  return Array.from(el.querySelectorAll('*')).every(function (n) {
+    return /^(BR|SPAN|STRONG|B|EM|I|U|SMALL|CODE|SUP|SUB)$/.test(n.tagName) || (n.tagName === 'DIV' && !n.attributes.length);
+  });
+}
+function naturalTextHeight(el) {
+  var hadStyle = el.hasAttribute('style');
+  var height = el.style.height;
+  var priority = el.style.getPropertyPriority('height');
+  el.style.setProperty('height', 'auto', priority);
+  var natural = el.offsetHeight;
+  el.style.setProperty('height', height, priority);
+  if (!hadStyle) el.removeAttribute('style');
+  return natural;
+}
+function onTextInput() {
+  if (textHeight !== null && naturalTextHeight(editing) !== textHeight) {
+    editing.style.height = 'auto';
+    textHeight = null;
+  }
+  paintSelection();
 }
 function htmlEdit(el) {
   if (editing === el) return;
@@ -750,6 +822,11 @@ function htmlEdit(el) {
   select(el);
   snap();
   editing = el;
+  var style = el.style;
+  // Match fixed dimensions written by older editor builds, including exported annotations.
+  var editorSized = el.classList.contains('de-text') ||
+    (style.boxSizing === 'border-box' && style.flexShrink === '0' && /^0(px)?$/.test(style.minHeight) && style.overflowWrap === 'break-word');
+  textHeight = editorSized && /^\d+(\.\d+)?px$/.test(style.height) ? el.offsetHeight : null;
   el.setAttribute('contenteditable', 'true');
   el.focus();
   try {
@@ -758,15 +835,13 @@ function htmlEdit(el) {
     var s = win.getSelection();
     s.removeAllRanges(); s.addRange(r);
   } catch (e) {}
-  var onBlur = function () {
-    el.removeEventListener('blur', onBlur);
-    if (editing === el) endEdit();
-  };
-  el.addEventListener('blur', onBlur);
+  el.addEventListener('blur', endEdit);
+  el.addEventListener('input', onTextInput);
   refreshSel();
 }
 function svgTextEdit(el) {
   endEdit();
+  select(el);
   snap();
   var rect = getRect(el);
   var input = doc.createElement('input');
@@ -779,37 +854,40 @@ function svgTextEdit(el) {
   input.style.width = Math.max(80, rect.width + 70) + 'px';
   input.style.fontSize = clamp(fs, 10, 30) + 'px';
   doc.body.appendChild(input);
+  svgEditor = { input: input, el: el, original: el.textContent };
   input.focus(); input.select();
-  var orig = el.textContent;
   input.addEventListener('input', function () {
     el.textContent = input.value;
     pdDirty();
     refreshSel();
   });
-  input.addEventListener('keydown', function (ev) {
-    ev.stopPropagation();
-    if (ev.key === 'Enter') { input.blur(); }
-    if (ev.key === 'Escape') { el.textContent = orig; input.blur(); }
-  });
-  input.addEventListener('blur', function () {
-    if (input.parentNode) input.parentNode.removeChild(input);
-    pdDirty();
-    refreshSel();
-    callUi('onSelChange');
-  });
+  input.addEventListener('blur', endEdit);
 }
 function endEdit() {
-  if (!editing) return;
-  editing.removeAttribute('contenteditable');
-  editing = null;
+  if (svgEditor) {
+    var input = svgEditor.input;
+    svgEditor = null;
+    input.removeEventListener('blur', endEdit);
+    input.remove();
+  } else if (editing) {
+    var el = editing;
+    editing = null;
+    el.removeEventListener('blur', endEdit);
+    el.removeEventListener('input', onTextInput);
+    textHeight = null;
+    el.removeAttribute('contenteditable');
+  } else return;
   pdDirty();
   refreshSel();
 }
 DE.endEdit = endEdit;
-DE.startEdit = htmlEdit;
+DE.startEdit = function (el) {
+  if (isSvg(el)) svgTextEdit(el);
+  else htmlEdit(el);
+};
 DE.canEditText = canEditText;
 function isNavigation(t) {
-  return !!(t.closest && (t.closest('.hud,nav,.footer,.top,#prev,#next,#dots,[data-de-nav]') || t.closest('[data-action="goto"],[data-action="prev"],[data-action="next"],[data-action="menu"],[data-action="notes"],[data-action="fullscreen"],[data-action="help"]')));
+  return !!(t.closest && (t.closest('.hud,nav,.footer,.top,#prev,#previous,#next,#dots,[data-de-nav],button[popovertarget],[popover] button[data-slide],#contents-list button') || t.closest('[data-action="goto"],[data-action="prev"],[data-action="next"],[data-action="menu"],[data-action="notes"],[data-action="fullscreen"],[data-action="help"],[role="dialog"] [data-action="close"]')));
 }
 DE.setMode = function (mode) {
   endEdit(); clearSel(); clearHover(); pending = null; drag = null;
@@ -837,9 +915,9 @@ function onPointerDown(e) {
   var t = e.target;
   if (!t || t.nodeType !== 1) return;
 
-  if (editing && (t === editing || editing.contains(t))) return;
+  if ((editing && editing.contains(t)) || (svgEditor && t === svgEditor.input)) return;
   /* 文本编辑中点到别处：先收尾编辑（保证重画/保存前来得及记录修改） */
-  if (editing && t !== editing && !editing.contains(t)) endEdit();
+  endEdit();
 
   /* 角手柄 -> 缩放 */
   var h = t.closest ? t.closest('.de-h') : null;
@@ -985,18 +1063,16 @@ function startResize(e, h) {
     w: { x: r.right, y: r.top }, e: { x: r.left, y: r.top }
   };
   resizeState.A = anchors[dir];
-  var K = DE.getK();
   if (sel.length === 1) {
     var el = sel[0];
-    var da = el.dataset && el.dataset.deAnno;
-    if (da === 'box' || da === 'circle' || da === 'roundrect' || da === 'img') {
+    if (el.matches('.de-box,.de-img')) {
       /* 方框：改 left/top/width/height */
       resizeState.items.push({
         kind: 'box', el: el,
         l0: parseFloat(el.style.left) || 0, t0: parseFloat(el.style.top) || 0,
         w0: el.offsetWidth, h0: el.offsetHeight
       });
-    } else if (!isSvg(el) && ((el.dataset && el.dataset.deAnno === 'text') || canEditText(el))) {
+    } else if (!isSvg(el) && (el.classList.contains('de-text') || canEditText(el))) {
       var css = win.getComputedStyle(el), tr = getRect(el), ts = ensureT(el);
       resizeState.items.push({
         kind: 'textbox', el: el, abs: /^(absolute|fixed)$/.test(css.position),
@@ -1054,7 +1130,7 @@ function doResize(e) {
       }
       w = Math.max(24, w); h = Math.max(24, h);
       it.el.style.width = w + 'px';
-      it.el.style.height = h + 'px';
+      if (it.kind === 'box' || sy) it.el.style.height = h + 'px';
       if (it.kind === 'textbox') {
         it.el.style.boxSizing = 'border-box';
         it.el.style.maxWidth = 'none'; it.el.style.minWidth = '0';
@@ -1145,36 +1221,62 @@ function doLineEnd(e) {
 }
 
 /* ==================== 引擎：键盘 ==================== */
-function isInputFocus() {
-  var a = doc.activeElement;
-  if (!a) return false;
-  if (a.isContentEditable) return true;
-  var tag = a.tagName;
-  return tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT';
+function isTextInput(el) {
+  return !!(el && (el === editing || el.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName)));
 }
-function onKeyDown(e) {
-  if (DE.mode === 'preview' || isUiEl(e.target)) return;
-  if (isInputFocus()) {
-    /* 编辑态：Escape 结束编辑并清选（其余键原生） */
-    if (e.key === 'Escape') {
-      var a = doc.activeElement;
-      if (a && a.isContentEditable && a.blur) a.blur();
-      setTimeout(function () { clearSel(); }, 0);
+DE.installKeyboardGuard = function (frame) {
+  ['keydown', 'keypress', 'keyup'].forEach(function (type) {
+    frame.addEventListener(type, onEditKey, true);
+  });
+};
+function onEditKey(e) {
+  if (DE.mode !== 'edit') return;
+  // Keep page shortcuts out of Edit mode, while preserving browser text input and IME.
+  e.stopImmediatePropagation();
+  if (e.type !== 'keydown' || !doc || e.isComposing || e.keyCode === 229) return;
+  var k = e.key;
+  var target = e.target;
+  if (isTextInput(target) || isTextInput(doc.activeElement)) {
+    var svg = svgEditor && target === svgEditor.input;
+    if (svg && (k === 'Enter' || k === 'Escape')) {
+      e.preventDefault();
+      if (k === 'Escape') svgEditor.el.textContent = svgEditor.original;
+      endEdit();
+    } else if (k === 'Escape' && editing) {
+      e.preventDefault();
+      var el = editing;
+      clearSel();
+      el.blur();
     }
     return;
   }
+  if (k === 'Backspace' || k === 'Delete') {
+    e.preventDefault();
+    if (sel.length && !e.repeat && !e.altKey && !e.ctrlKey && !e.metaKey && !e.shiftKey) {
+      callUi('deleteSelection');
+    }
+    return;
+  }
+  if (isUiEl(target)) { callUi('onKeyDown', e); return; }
+  if ((k === ' ' || k === 'Enter') && isNavigation(target)) {
+    e.preventDefault();
+    return;
+  }
+  onSelectionKey(e);
+}
+function onSelectionKey(e) {
   var k = e.key;
   if ((e.metaKey || e.ctrlKey) && (k === 'z' || k === 'Z')) {
-    e.preventDefault(); e.stopPropagation();
+    e.preventDefault();
     undo();
     return;
   }
   if (k === 'Escape') {
-    if (sel.length) { e.preventDefault(); e.stopPropagation(); clearSel(); }
+    if (sel.length) { e.preventDefault(); clearSel(); }
     return;
   }
   if (sel.length && (k === 'ArrowUp' || k === 'ArrowDown' || k === 'ArrowLeft' || k === 'ArrowRight')) {
-    e.preventDefault(); e.stopPropagation();
+    e.preventDefault();
     var step = e.shiftKey ? 10 : 1;
     var dx = k === 'ArrowLeft' ? -step : k === 'ArrowRight' ? step : 0;
     var dy = k === 'ArrowUp' ? -step : k === 'ArrowDown' ? step : 0;
@@ -1202,12 +1304,11 @@ function onKeyDown(e) {
     refreshSel();
     return;
   }
-  /* 其余放行：deck 翻页等 */
 }
 
 /* ==================== 引擎：初始化 ==================== */
 var ENGINE_CSS = [
-'.de-selbox{position:fixed;border:1.5px solid #4E8AE8;pointer-events:none;z-index:2147482000;box-shadow:0 0 0 1px rgba(78,138,232,.25);border-radius:2px;}',
+'.de-selbox{position:fixed;box-sizing:border-box;min-width:1px;min-height:1px;border:1.5px solid #4E8AE8;pointer-events:none;z-index:2147482000;box-shadow:0 0 0 1px rgba(78,138,232,.25);border-radius:2px;}',
 '.de-selbox.de-dash{border-style:dashed;border-color:#7FA8E8;}',
 '.de-selbox.de-group{border-width:1.5px;border-color:#4E8AE8;background:rgba(78,138,232,.04);}',
 '.de-h{position:fixed;width:10px;height:10px;background:#fff;border:2px solid #4E8AE8;border-radius:2px;pointer-events:auto;z-index:2147482001;margin:-6px 0 0 -6px;}',
@@ -1217,6 +1318,7 @@ var ENGINE_CSS = [
 '.de-h-n{cursor:ns-resize;} .de-h-s{cursor:ns-resize;}',
 '.de-h-e{cursor:ew-resize;} .de-h-w{cursor:ew-resize;}',
 '.de-eppt{position:fixed;width:12px;height:12px;margin:-7px 0 0 -7px;border-radius:50%;background:#fff;border:2.5px solid #4E8AE8;pointer-events:none;z-index:2147482001;}',
+'p:empty,h1:empty,h2:empty,h3:empty,h4:empty,h5:empty,h6:empty,.de-text:empty{min-block-size:1lh;}',
 '.de-hover{outline:1.5px solid rgba(78,138,232,.55) !important;outline-offset:1px;}',
 '.de-textinp{position:fixed;z-index:2147482100;background:#fff;border:1.5px solid #4E8AE8;border-radius:4px;padding:4px 8px;font-family:inherit;color:#16233A;box-shadow:0 4px 16px rgba(0,0,0,.18);outline:none;}'
 ].join('\n');
@@ -1249,18 +1351,18 @@ function initEngine() {
   doc.addEventListener('pointerdown', onPointerDown, true);
   doc.addEventListener('pointermove', onPointerMove, true);
   doc.addEventListener('pointerup', onPointerUp, true);
-  doc.addEventListener('keydown', onKeyDown, true);
+  DE.installKeyboardGuard(win);
   doc.addEventListener('dblclick', function (e) {
     var t = e.target;
     if (!t || t.nodeType !== 1) return;
     if (DE.mode === 'preview' || isUiEl(t) || isNavigation(t)) return;
     var el = hitEl(e);
     if (!el) return;
-    if (isSvg(el)) {
-      if (el.tagName === 'text') { e.preventDefault(); e.stopPropagation(); svgTextEdit(el); }
-    } else if (canEditText(el)) {
+    var textBlock = el.closest('p,h1,h2,h3,h4,h5,h6,.de-text');
+    if (textBlock && canEditText(textBlock)) el = textBlock;
+    if (canEditText(el)) {
       e.preventDefault(); e.stopPropagation();
-      htmlEdit(el);
+      DE.startEdit(el);
     }
   }, true);
   win.addEventListener('resize', function () { refreshSel(); });
@@ -1270,8 +1372,8 @@ function initEngine() {
     for (var i = 0; i < muts.length; i++) {
       var tg = muts[i].target;
       if (tg && tg.classList && tg.classList.contains('slide')) {
-        if (sel.length || hoverEl || editing) {
-          if (editing) endEdit();
+        if (sel.length || hoverEl || editing || svgEditor) {
+          endEdit();
           sel.length = 0;
           if (hoverEl) { hoverEl.classList.remove('de-hover'); hoverEl = null; }
           refreshSel();
@@ -1413,7 +1515,7 @@ window.__dePersistRun = function (cfg) {
   }
   function resolve(c,l){try{return l?c.querySelector(l):c;}catch(e){return null;}}
   function getPage(k,create){for(var i=0;i<pages.length;i++)if(pages[i].key===k)return pages[i];if(!create)return null;var p={key:k,patches:[],annotations:[]};pages.push(p);return p;}
-  function canText(n){if(!n.textContent.trim() || /^(SCRIPT|STYLE|INPUT|TEXTAREA|SELECT|SVG)$/.test(n.tagName))return false;if(!n.children.length)return true;if(!/^(P|H[1-6]|SPAN|BUTTON|LABEL|LI|TD|TH|BLOCKQUOTE|STRONG|EM|DIV)$/.test(n.tagName))return false;return Array.from(n.querySelectorAll('*')).every(function(x){return /^(BR|SPAN|STRONG|B|EM|I|U|SMALL|CODE|SUP|SUB)$/.test(x.tagName);});}
+  function canText(n){if(/^(SCRIPT|STYLE|INPUT|TEXTAREA|SELECT|SVG)$/.test(n.tagName))return false;if(!n.textContent.trim() && !n.matches('p,h1,h2,h3,h4,h5,h6,.de-text'))return false;if(!n.children.length)return true;if(!/^(P|H[1-6]|SPAN|BUTTON|LABEL|LI|TD|TH|BLOCKQUOTE|STRONG|EM|DIV)$/.test(n.tagName))return false;return Array.from(n.querySelectorAll('*')).every(function(x){return /^(BR|SPAN|STRONG|B|EM|I|U|SMALL|CODE|SUP|SUB)$/.test(x.tagName) || (x.tagName==='DIV' && !x.attributes.length);});}
   function capture(c){
     var p=getPage(key(c)),nodes=[c].concat(Array.from(c.querySelectorAll('*'))).filter(function(n){return !n.closest('[data-de-ui],.de-anno');});
     var rows=nodes.map(function(n){var copy=clean(n),a={};attrs.forEach(function(k){a[k]=copy.getAttribute(k);});var row={el:n,loc:loc(n,c),tag:n.tagName,html:copy.innerHTML,text:copy.textContent,attrs:a,editable:canText(copy),parent:n.parentNode,next:n.nextSibling,ancestors:[]};var q=n.parentElement;while(q && q!==c){row.ancestors.push(q);q=q.parentElement;}row.ancestors.push(c);
@@ -1451,17 +1553,17 @@ window.__dePersistRun = function (cfg) {
   return {check:check,cont:cont,key:key,loc:loc,resolve:resolve,clean:clean,getPage:getPage,attrs:attrs,pages:pages,sync:sync,getBase:function(){return base;},disconnect:function(){mo.disconnect();}};
 };
 
-var P=DE.Persist={doc:null,win:null,selector:null,container:null,pages:[],legacy:[],run:null,base:null,enabled:false,active:null};
+var P=DE.Persist={doc:null,win:null,selector:null,container:null,pages:[],legacy:[],run:null,base:null,enabled:false};
 P.init=function(doc,win){
   if(P.run)P.run.disconnect();
-  P.doc=doc;P.win=win;P.pages=[];P.legacy=[];P.base=null;P.active=null;P.enabled=false;
+  P.doc=doc;P.win=win;P.pages=[];P.legacy=[];P.base=null;P.enabled=false;
   var tags=doc.querySelectorAll('script[data-de-persist]'),data=null;
   tags.forEach(function(s){if(s.getAttribute('data-de-persist')==='1'){try{data=JSON.parse(s.textContent);}catch(e){}}});tags.forEach(function(s){s.remove();});
   if(data){P.pages=Array.isArray(data.pages)?data.pages:[];P.legacy=Array.isArray(data.store)?data.store:[];}
   var candidates=[data && data.sel,'#slide','.slide.active','.slide','body'];
   P.selector=candidates.find(function(s){if(!s)return false;try{return !!doc.querySelector(s);}catch(e){return false;}});
   P.container=doc.querySelector(P.selector);P.enabled=!!P.container;
-  P.run=window.__dePersistRun({win:win,doc:doc,sel:P.selector,pages:P.pages,store:P.legacy,owner:true,onRender:function(b){P.base=b;P.container=b.c;P.active=P.run?P.run.getPage(b.key,false):null;if(DE.bumpGen)DE.bumpGen();if(DE.clearSel)DE.clearSel();}});
+  P.run=window.__dePersistRun({win:win,doc:doc,sel:P.selector,pages:P.pages,store:P.legacy,owner:true,onRender:function(b){P.base=b;P.container=b.c;if(DE.bumpGen)DE.bumpGen();if(DE.clearSel)DE.clearSel();}});
   P.base=P.run.getBase();
 };
 P.beforeEdit=function(){if(DE.clearHover)DE.clearHover();if(P.run)P.run.check(false);};
@@ -1481,22 +1583,15 @@ P.markDirty=function(){
     if(!live){v.deleted=true;changed=true;covered.push(el);}
     else{
       var copy=P.run.clean(el);
-      if(row.editable && copy.textContent!==row.text){v.html={from:row.html,to:copy.innerHTML};changed=true;covered.push(el);}
+      if(row.editable && copy.innerHTML!==row.html){v.html={from:row.html,to:copy.innerHTML};changed=true;covered.push(el);}
       var a={};P.run.attrs.forEach(function(k){var value=copy.getAttribute(k);if(value!==row.attrs[k]){a[k]={from:row.attrs[k],to:value};changed=true;}});if(Object.keys(a).length)v.attrs=a;
     }
     if(oldIndex>=0){if(changed)p.patches[oldIndex]=v;else p.patches.splice(oldIndex,1);}else if(changed)p.patches.push(v);
   });
   p.annotations=Array.from(c.querySelectorAll('.de-anno')).filter(function(n){return !n.parentElement.closest('.de-anno');}).map(function(n){return {host:P.run.loc(n.parentElement,c),html:P.run.clean(n).outerHTML};});
-  P.active=p;P.run.sync();
+  P.run.sync();
 };
 P.hasEdits=function(){return P.pages.some(function(p){return p.patches.length || p.annotations.length;}) || P.legacy.length>0;};
-P.tryRevert=function(){
-  if(!P.base || !P.active)return false;
-  var b=P.base,p=P.active;if(!p.patches.length&&!p.annotations.length)return false;
-  var covered=[];
-  b.nodes.forEach(function(row){var n=row.el;if(covered.some(function(x){return row.ancestors.indexOf(x)>=0;}))return;if(!n.isConnected && row.parent && row.parent.isConnected)row.parent.insertBefore(n,row.next && row.next.parentNode===row.parent?row.next:null);if(!n.isConnected)return;Object.keys(row.attrs).forEach(function(k){if(row.attrs[k]===null)n.removeAttribute(k);else n.setAttribute(k,row.attrs[k]);});if(row.editable){n.innerHTML=row.html;covered.push(n);}});
-  b.c.querySelectorAll('.de-anno').forEach(function(n){n.remove();});p.patches=[];p.annotations=[];P.run.sync();return true;
-};
 P.embed=function(nd){
   P.markDirty();
   var pages=P.pages.filter(function(p){return p.patches.length || p.annotations.length;});
@@ -1613,12 +1708,13 @@ function attach(d, w) {
   d.head.appendChild(st);
   buildBar();
   d.addEventListener('pointerdown', onGlobalDown, true);
-  d.addEventListener('keydown',onUiKey,true);
   console.log('[deck-editor] ui attached');
 }
 DE.ui = DE.ui || {};
 DE.ui.attach = attach;
 DE.ui.onSelChange = onSelChange;
+DE.ui.onKeyDown = onUiKey;
+DE.ui.deleteSelection = doDelete;
 DE.ui.openSave = openSave;
 DE.ui.download = doDownload;
 DE.ui.closeFile = closeFile;
@@ -1637,7 +1733,17 @@ function placeMenu(menu){
   else if(r.left<8)menu.style.right=(r.left-8)+'px';
 }
 function onGlobalDown(e){var t=e.target;if(!t.closest || !t.closest('.de-bar,.de-pal')){closeMenus();if(pal)pal.classList.remove('show');}}
-function onUiKey(e){if(!e.target.closest || !e.target.closest('[data-de-ui]'))return;if(e.key==='Escape'){e.preventDefault();closeMenus();if(pal)pal.classList.remove('show');}if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='z'){e.preventDefault();DE.undo();}e.stopPropagation();}
+function onUiKey(e) {
+  if (e.key === 'Escape') {
+    e.preventDefault();
+    closeMenus();
+    if (pal) pal.classList.remove('show');
+  }
+  if ((e.metaKey || e.ctrlKey) && (e.key === 'z' || e.key === 'Z')) {
+    e.preventDefault();
+    DE.undo();
+  }
+}
 
 function buildBar() {
   bar = doc.createElement('div');
@@ -1690,6 +1796,7 @@ function buildBar() {
   bar.addEventListener('click', function (e) {
     var b = e.target.closest('[data-cmd]');
     if (!b || b.disabled) return;
+    DE.focusCanvas();
     var cmd=b.getAttribute('data-cmd');
     if(cmd==='toggle-insert'){toggleMenu(insertMenu,cmd);return;}
     closeMenus();onCmd(cmd);
@@ -1942,7 +2049,8 @@ function doDelete() {
 /* ==================== 标注创建 ==================== */
 /* 插入宿主：deck 页 -> 普通页面兜底 body（兼容数据看板等非 deck 文件） */
 function findHost() {
-  return doc.querySelector('#slide') || doc.querySelector('.slide.active') || doc.querySelector('.slide') || doc.body;
+  return doc.querySelector('#slide') || doc.querySelector('.slide.active') ||
+    doc.querySelector('.slide:not([hidden]):not([aria-hidden="true"])') || doc.body;
 }
 /* 插入点：当前视口中央换算到宿主坐标（宿主为 body 时即文档坐标） */
 function insertXY(host, w, h) {
@@ -1997,10 +2105,12 @@ function doLayer(up) {
 function insertImgFile(f) {
   if (!f) return;
   if (!/^image\//.test(f.type || '')) { DE.toast('请选择图片文件'); return; }
+  var targetDoc = doc, host = findHost();
   var rd = new FileReader();
+  rd.onerror = function () { DE.toast('读取文件失败'); };
   rd.onload = function () {
-    var host = findHost();
-    var img = doc.createElement('img');
+    var img = targetDoc.createElement('img');
+    img.onerror = function () { DE.toast('无法加载图片'); };
     img.className = 'de-anno de-img';
     img.setAttribute('data-de-anno', 'img');
     img.draggable = false;
@@ -2008,15 +2118,17 @@ function insertImgFile(f) {
     img.onload = function () {
       if (done) return;
       done = true;
+      if (doc !== targetDoc || !host.isConnected || host !== findHost()) return;
+      DE.snap();
       var nw = img.naturalWidth || 300, nh = img.naturalHeight || 200;
       var maxW = 420;
       var w = nw > maxW ? maxW : nw;
       var h = Math.max(20, Math.round(nh * (w / nw)));
       var tp = insertXY(host, w, h);
       img.style.cssText = 'position:absolute;left:' + tp.x + 'px;top:' + tp.y + 'px;width:' + w + 'px;height:' + h + 'px;max-width:none;z-index:30;box-sizing:border-box;';
-      if (DE.Persist && DE.Persist.beforeEdit) { try { DE.Persist.beforeEdit(); } catch (e) {} }
       host.appendChild(img);
       pdDirty();
+      DE.focusCanvas();
       DE.select(img);
       DE.toast('已插入图片：拖动移位 · 拖手柄缩放 · 可调层级');
     };
@@ -2052,7 +2164,7 @@ function addAnno(type) {
     el = doc.createElement('div');
     el.className = 'de-anno de-text';
     el.setAttribute('data-de-anno', 'text');
-    el.style.cssText = 'position:absolute;left:' + tp.x + 'px;top:' + tp.y + 'px;width:260px;height:54px;box-sizing:border-box;font-size:26px;color:#C0392B;font-weight:600;z-index:31;white-space:pre-wrap;overflow-wrap:break-word;';
+    el.style.cssText = 'position:absolute;left:' + tp.x + 'px;top:' + tp.y + 'px;width:260px;box-sizing:border-box;font-size:26px;color:#C0392B;font-weight:600;z-index:31;white-space:pre-wrap;overflow-wrap:break-word;';
     el.textContent = '双击输入文字';
     host.appendChild(el);
   } else {
@@ -2075,7 +2187,8 @@ function buildLine(host, tp) {
   svg.setAttribute('class', 'de-anno de-line');
   svg.setAttribute('data-de-anno', 'line');
   svg.setAttribute('style', 'position:absolute;left:' + tp.x + 'px;top:' + tp.y + 'px;width:1px;height:1px;overflow:visible;z-index:32;');
-  var mid = 'deArr' + (arrN++);
+  var mid;
+  do { mid = 'deArr' + (arrN++); } while (doc.getElementById(mid));
   var html = '<defs><marker id="' + mid + '" markerWidth="9" markerHeight="9" refX="7.5" refY="3" orient="auto" markerUnits="strokeWidth">'
     + '<path d="M0,0 L7.5,3 L0,6 z" fill="#C0392B"></path></marker></defs>'
     + '<line class="hit" x1="0" y1="0" x2="250" y2="0" stroke="transparent" stroke-width="16" pointer-events="stroke"></line>'
